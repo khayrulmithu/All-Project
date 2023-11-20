@@ -1,0 +1,22 @@
+
+#include <Arduino.h>
+
+#include "Talkie.h"
+#include "Vocab_US_Large.h"
+
+Talkie voice;
+
+void setup() {
+//    voice.doNotUseInvertedOutput();
+#if defined(TEENSYDUINO)
+    pinMode(3, OUTPUT);
+    digitalWrite(3, HIGH); //Enable Amplified PROP shield
+#endif
+    
+     voice.say(sp2_IS);
+     voice.say(sp2_ON);
+}
+
+void loop() {
+  
+}

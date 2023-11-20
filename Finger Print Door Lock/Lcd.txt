@@ -1,0 +1,17 @@
+#include<LiquidCrystal.h>
+
+LiquidCrystal lcd(13,11,9,7,5,3);
+
+void setup() {
+  // put your setup code here, to run once:
+  //analogWrite(8,20);
+lcd.begin(16,2);
+lcd.print("WELCOME");
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  //lcd.setCursor(0,0);
+  //lcd.print("WELCOME");
+  //lcd.print(millis()/1000);
+}
